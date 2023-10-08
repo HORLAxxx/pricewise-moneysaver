@@ -90,8 +90,7 @@ export async function scrapeAmazonProduct(url: string) {
       description,
       lowestPrice: Number(currentPrice) || Number(originalPrice),
       highestPrice: Number(originalPrice) || Number(currentPrice),
-      //averagePrice: Number(currentPrice) || Number(originalPrice)
-      averagePrice: (Number(currentPrice) === Number(originalPrice)) ? 0 : Number(currentPrice),
+      averagePrice: Number(currentPrice) || Number(originalPrice)
     }
     return data;
   } catch (error: any) {
