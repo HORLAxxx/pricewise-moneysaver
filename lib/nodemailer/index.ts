@@ -1,7 +1,6 @@
 
 "use server"
 //process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-//process.env.NODE_DEBUG = 'ssl'; aaddd
 
 import { EmailContent, EmailProductInfo, NotificationType } from '@/types';
 import nodemailer from 'nodemailer';
